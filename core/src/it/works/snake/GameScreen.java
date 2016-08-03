@@ -32,11 +32,9 @@ public class GameScreen extends ScreenAdapter {
 
     //Textures
     private Texture snakeHeadTexture = new Texture(Gdx.files.internal("snakehead.png"));
-    private Texture snakeBodyTexture = new Texture(Gdx.files.internal("snakebody.png"));
     private Texture appleTexture = new Texture(Gdx.files.internal("apple.png"));
 
     private TextureRegion snakeHead;
-    private TextureRegion snakeBody;
     private TextureRegion apple;
 
     //Snake data
@@ -63,7 +61,6 @@ public class GameScreen extends ScreenAdapter {
     public void show() {
         batch = new SpriteBatch();
         snakeHead = new TextureRegion(snakeHeadTexture);
-        snakeBody = new TextureRegion(snakeBodyTexture);
         apple = new TextureRegion(appleTexture);
     }
 
